@@ -4,7 +4,10 @@ import static org.mockito.Mockito.*;
 
 import junit.framework.TestCase;
 
+
 public class CalcImplementationTest extends TestCase {
+	
+	
 	
 	CalcImplementation obj;
 	int a,b;
@@ -12,6 +15,8 @@ public class CalcImplementationTest extends TestCase {
 	 obj=new CalcImplementation();
 	 a=3;
 	 b=5;
+	
+	 
 	 CalcInterface mockObj = mock(CalcInterface.class);
 	 when(mockObj.add(a, b)).thenReturn(a+b);
 	 obj.setCalc(mockObj);
